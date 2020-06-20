@@ -1,14 +1,10 @@
 public class Transportadora {
-    private int IdTransportadora;
     private String Nome;
     private String Email;
 
-    public int getIdTransportadora() {
-        return IdTransportadora;
-    }
-
-    public void setIdTransportadora(int idTransportadora) {
-        IdTransportadora = idTransportadora;
+    public Transportadora(String nome, String email) {
+        Nome = nome;
+        Email = email;
     }
 
     public String getNome() {
@@ -24,12 +20,6 @@ public class Transportadora {
     }
 
     public void setEmail(String email) {
-        Email = email;
-    }
-
-    public Transportadora(int idTransportadora, String nome, String email) {
-        IdTransportadora = idTransportadora;
-        Nome = nome;
         Email = email;
     }
 }
