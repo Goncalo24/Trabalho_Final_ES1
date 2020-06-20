@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 
 public class Repositorio {
+    int i = 0;
+
     ArrayList<Cliente> clientes = new ArrayList<>();
     ArrayList<ClienteEncomenda> clienteEncomendas = new ArrayList<>();
     ArrayList<Encomenda> encomendas = new ArrayList<>();
@@ -12,6 +14,7 @@ public class Repositorio {
     ArrayList<Transportadora> transportadoras = new ArrayList<>();
     ArrayList<Voucher> vouchers = new ArrayList<>();
     ArrayList<ClienteEncomendaTransportadora> clienteEncomendaTransportadoras = new ArrayList<>();
+    ArrayList<ClienteEncomendaLivro> clienteEncomendaLivros = new ArrayList<>();
 
     void AdicionaCliente(Cliente cliente){ this.clientes.add(cliente);}
     void AdicionaClienteEncomenda(ClienteEncomenda clienteEncomenda){this.clienteEncomendas.add(clienteEncomenda);}
@@ -24,5 +27,5 @@ public class Repositorio {
     void AdicionaTransportadora(Transportadora transportadora){this.transportadoras.add(transportadora);}
     void AdicionaVoucher(Voucher voucher){this.vouchers.add(voucher);}
     void AdicionaClienteEncomendaTransportadora(ClienteEncomendaTransportadora clienteEncomendaTransportadora){this.clienteEncomendaTransportadoras.add(clienteEncomendaTransportadora);}
-
+    void AdicionaClienteEncomendaLivro(ClienteEncomendaLivro clienteEncomendaLivro){this.clienteEncomendaLivros.add(clienteEncomendaLivro);}
 }
