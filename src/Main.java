@@ -5,7 +5,7 @@ public class Main {
         System.out.println("Compra de Livros");
 
         Repositorio repositorio = new Repositorio();
-        String edit = "", titulo = "", desc = "", nome = "", email = "", morada = "", codigo = "";
+        String edit = "", titulo = "", desc = "", nome = "", email = "", morada = "", codigo = "", tracking = "";
         int id = 0, estado = 0, quant = 0, stock = 0; /*estado 0 = preparando, estado 1= parcealmente enviado, estado 2= enviado*/
         Double preco = 0.0;
         Livro li = null;
@@ -22,5 +22,6 @@ public class Main {
         EncomendaLivro el = new EncomendaLivro(e, l, quant);
         Feedback fe = new Feedback(desc, ce);
         Notificacao n = new Notificacao(data, ce, f);
+        ClienteEncomendaTransportadora cet = new ClienteEncomendaTransportadora(t, data, tracking);
     }
 }

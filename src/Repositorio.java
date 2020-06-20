@@ -11,6 +11,7 @@ public class Repositorio {
     ArrayList<Notificacao> notificacaos = new ArrayList<>();
     ArrayList<Transportadora> transportadoras = new ArrayList<>();
     ArrayList<Voucher> vouchers = new ArrayList<>();
+    ArrayList<ClienteEncomendaTransportadora> clienteEncomendaTransportadoras = new ArrayList<>();
 
     void AdicionaCliente(Cliente cliente){ this.clientes.add(cliente);}
     void AdicionaClienteEncomenda(ClienteEncomenda clienteEncomenda){this.clienteEncomendas.add(clienteEncomenda);}
@@ -22,8 +23,6 @@ public class Repositorio {
     void AdicionaNotificacao(Notificacao notificacao){this.notificacaos.add(notificacao);}
     void AdicionaTransportadora(Transportadora transportadora){this.transportadoras.add(transportadora);}
     void AdicionaVoucher(Voucher voucher){this.vouchers.add(voucher);}
+    void AdicionaClienteEncomendaTransportadora(ClienteEncomendaTransportadora clienteEncomendaTransportadora){this.clienteEncomendaTransportadoras.add(clienteEncomendaTransportadora);}
 
-    Encomenda DevolveParcialmenteEncomenda(Encomenda e){
-
-    }
 }
