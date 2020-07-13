@@ -3,15 +3,13 @@ import java.util.Date;
 public class Envio {
     private int nEnvio;
     private Encomenda encomenda;
-    private EncomendaLivro encomendaLivro;
     private Transportadora transportadora;
     private Funcionario funcionario;
     private Date data;
 
-    public Envio(int nEnvio, Encomenda encomenda, EncomendaLivro encomendaLivro, Transportadora transportadora, Funcionario funcionario, Date data) {
+    public Envio(int nEnvio, Encomenda encomenda, Transportadora transportadora, Funcionario funcionario, Date data) {
         this.nEnvio = nEnvio;
         this.encomenda = encomenda;
-        this.encomendaLivro = encomendaLivro;
         this.transportadora = transportadora;
         this.funcionario = funcionario;
         this.data = data;
@@ -31,14 +29,6 @@ public class Envio {
 
     public void setEncomenda(Encomenda encomenda) {
         this.encomenda = encomenda;
-    }
-
-    public EncomendaLivro getEncomendaLivro() {
-        return encomendaLivro;
-    }
-
-    public void setEncomendaLivro(EncomendaLivro encomendaLivro) {
-        this.encomendaLivro = encomendaLivro;
     }
 
     public Transportadora getTransportadora() {
