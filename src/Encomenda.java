@@ -5,13 +5,15 @@ public class Encomenda {
     private LocalDate data;
     private int estado;
     private Cliente cliente;
+    private Voucher voucher;
     private double valorEncomenda;
 
-    public Encomenda(int nEncomenda, LocalDate data, int estado, Cliente cliente, double valorEncomenda) {
+    public Encomenda(int nEncomenda, LocalDate data, int estado, Cliente cliente, Voucher voucher, double valorEncomenda) {
         this.nEncomenda = nEncomenda;
         this.data = data;
         this.estado = estado;
         this.cliente = cliente;
+        this.voucher = voucher;
         this.valorEncomenda = valorEncomenda;
     }
 
@@ -45,6 +47,14 @@ public class Encomenda {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    public Voucher getVoucher() {
+        return voucher;
+    }
+
+    public void setVoucher(Voucher voucher) {
+        this.voucher = voucher;
     }
 
     public double getValorEncomenda() {
