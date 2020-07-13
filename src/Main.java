@@ -20,7 +20,7 @@ public class Main {
 
         Encomenda e = new Encomenda(id, data, estado, c, v, valor);
         EncomendaLivro el = new EncomendaLivro(e, l, quant, disp);
-        Envio en = new Envio(id, e, el, t, f, lanc);
+        Envio en = new Envio(id, e, t, f, lanc);
         Feedback fe = new Feedback(link, en, descricao, descricao);
         Notificacao no = new Notificacao(en, data, descricao);
 
