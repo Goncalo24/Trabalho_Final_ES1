@@ -1,47 +1,47 @@
-import java.time.LocalDate;
+import java.util.Date;
 
 public class Voucher {
-    String Codigo;
-    LocalDate Data_Inicio;
-    LocalDate Data_Fim;
-    Double desconto;
+    private int codigoVoucher;
+    private int desconto;
+    private Date validade;
+    private String descricao;
 
-    public Voucher(String codigo, LocalDate data_Inicio, LocalDate data_Fim, Double desconto) {
-        Codigo = codigo;
-        Data_Inicio = data_Inicio;
-        Data_Fim = data_Fim;
+    public Voucher(int codigoVoucher, int desconto, Date validade, String descricao) {
+        this.codigoVoucher = codigoVoucher;
         this.desconto = desconto;
+        this.validade = validade;
+        this.descricao = descricao;
     }
 
-    public String getCodigo() {
-        return Codigo;
+    public int getCodigoVoucher() {
+        return codigoVoucher;
     }
 
-    public void setCodigo(String codigo) {
-        Codigo = codigo;
+    public void setCodigoVoucher(int codigoVoucher) {
+        this.codigoVoucher = codigoVoucher;
     }
 
-    public LocalDate getData_Inicio() {
-        return Data_Inicio;
-    }
-
-    public void setData_Inicio(LocalDate data_Inicio) {
-        Data_Inicio = data_Inicio;
-    }
-
-    public LocalDate getData_Fim() {
-        return Data_Fim;
-    }
-
-    public void setData_Fim(LocalDate data_Fim) {
-        Data_Fim = data_Fim;
-    }
-
-    public Double getDesconto() {
+    public int getDesconto() {
         return desconto;
     }
 
-    public void setDesconto(Double desconto) {
+    public void setDesconto(int desconto) {
         this.desconto = desconto;
+    }
+
+    public Date getValidade() {
+        return validade;
+    }
+
+    public void setValidade(Date validade) {
+        this.validade = validade;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }

@@ -1,45 +1,35 @@
 public class Cliente {
-    private int IdCliente;
-    private String Nome;
-    private String Email;
-    private String Morada;
+    private String nome;
+    private String morada;
+    private String email;
 
-    public Cliente(int idCliente, String nome, String email, String morada) {
-        IdCliente = idCliente;
-        Nome = nome;
-        Email = email;
-        Morada = morada;
-    }
-
-    public int getIdCliente() {
-        return IdCliente;
-    }
-
-    public void setIdCliente(int idCliente) {
-        IdCliente = idCliente;
+    public Cliente(String nome, String morada, String email) {
+        this.nome = nome;
+        this.morada = morada;
+        this.email = email;
     }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String nome) {
-        Nome = nome;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String email) {
-        Email = email;
+        this.nome = nome;
     }
 
     public String getMorada() {
-        return Morada;
+        return morada;
     }
 
     public void setMorada(String morada) {
-        Morada = morada;
+        this.morada = morada;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

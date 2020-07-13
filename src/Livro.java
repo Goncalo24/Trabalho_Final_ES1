@@ -1,45 +1,67 @@
-public class Livro {
-    private String Titulo;
-    private String Editora;
-    private Double Preço;
-    private int Stock;
+import java.util.Date;
 
-    public Livro(String titulo, String editora, Double preço, int stock) {
-        Titulo = titulo;
-        Editora = editora;
-        Preço = preço;
-        Stock = stock;
+public class Livro {
+    private String titulo;
+    private String autor;
+    private Date anoLanc;
+    private int referencia;
+    private int stock;
+    private double preco;
+
+    public Livro(String titulo, String autor, Date anoLanc, int referencia, int stock, double preco) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.anoLanc = anoLanc;
+        this.referencia = referencia;
+        this.stock = stock;
+        this.preco = preco;
     }
 
     public String getTitulo() {
-        return Titulo;
+        return titulo;
     }
 
     public void setTitulo(String titulo) {
-        Titulo = titulo;
+        this.titulo = titulo;
     }
 
-    public String getEditora() {
-        return Editora;
+    public String getAutor() {
+        return autor;
     }
 
-    public void setEditora(String editora) {
-        Editora = editora;
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
-    public Double getPreço() {
-        return Preço;
+    public Date getAnoLanc() {
+        return anoLanc;
     }
 
-    public void setPreço(Double preço) {
-        Preço = preço;
+    public void setAnoLanc(Date anoLanc) {
+        this.anoLanc = anoLanc;
+    }
+
+    public int getReferencia() {
+        return referencia;
+    }
+
+    public void setReferencia(int referencia) {
+        this.referencia = referencia;
     }
 
     public int getStock() {
-        return Stock;
+        return stock;
     }
 
     public void setStock(int stock) {
-        Stock = stock;
+        this.stock = stock;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
 }

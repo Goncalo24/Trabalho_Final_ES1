@@ -1,30 +1,26 @@
 import java.time.LocalDate;
 
 public class Encomenda {
-    private int IdEncomenda;
-    private int Estado;
+    private int nEncomenda;
     private LocalDate data;
+    private int estado;
+    private Cliente cliente;
+    private double valorEncomenda;
 
-    public Encomenda(int idEncomenda, int estado, LocalDate data) {
-        IdEncomenda = idEncomenda;
-        Estado = estado;
+    public Encomenda(int nEncomenda, LocalDate data, int estado, Cliente cliente, double valorEncomenda) {
+        this.nEncomenda = nEncomenda;
         this.data = data;
+        this.estado = estado;
+        this.cliente = cliente;
+        this.valorEncomenda = valorEncomenda;
     }
 
-    public int getIdEncomenda() {
-        return IdEncomenda;
+    public int getnEncomenda() {
+        return nEncomenda;
     }
 
-    public void setIdEncomenda(int idEncomenda) {
-        IdEncomenda = idEncomenda;
-    }
-
-    public int getEstado() {
-        return Estado;
-    }
-
-    public void setEstado(int estado) {
-        Estado = estado;
+    public void setnEncomenda(int nEncomenda) {
+        this.nEncomenda = nEncomenda;
     }
 
     public LocalDate getData() {
@@ -33,5 +29,29 @@ public class Encomenda {
 
     public void setData(LocalDate data) {
         this.data = data;
+    }
+
+    public int getEstado() {
+        return estado;
+    }
+
+    public void setEstado(int estado) {
+        this.estado = estado;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public double getValorEncomenda() {
+        return valorEncomenda;
+    }
+
+    public void setValorEncomenda(double valorEncomenda) {
+        this.valorEncomenda = valorEncomenda;
     }
 }

@@ -1,25 +1,25 @@
 public class Funcionario {
-    int IdFuncionario;
-    String Nome;
+    private String nome;
+    private String email;
 
-    public Funcionario(int idFuncionario, String nome) {
-        IdFuncionario = idFuncionario;
-        Nome = nome;
-    }
-
-    public int getIdFuncionario() {
-        return IdFuncionario;
-    }
-
-    public void setIdFuncionario(int idFuncionario) {
-        IdFuncionario = idFuncionario;
+    public Funcionario(String nome, String email) {
+        this.nome = nome;
+        this.email = email;
     }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String nome) {
-        Nome = nome;
+        this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

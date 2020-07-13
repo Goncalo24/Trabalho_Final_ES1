@@ -1,12 +1,14 @@
 public class EncomendaLivro {
-    Encomenda encomenda;
-    Livro livro;
-    private int Quantidade;
+    private Encomenda encomenda;
+    private Livro livro;
+    private int quantidade;
+    private int disponibilidade;
 
-    public EncomendaLivro(Encomenda encomenda, Livro livro, int quantidade) {
+    public EncomendaLivro(Encomenda encomenda, Livro livro, int quantidade, int disponibilidade) {
         this.encomenda = encomenda;
         this.livro = livro;
-        Quantidade = quantidade;
+        this.quantidade = quantidade;
+        this.disponibilidade = disponibilidade;
     }
 
     public Encomenda getEncomenda() {
@@ -26,10 +28,18 @@ public class EncomendaLivro {
     }
 
     public int getQuantidade() {
-        return Quantidade;
+        return quantidade;
     }
 
     public void setQuantidade(int quantidade) {
-        Quantidade = quantidade;
+        this.quantidade = quantidade;
+    }
+
+    public int getDisponibilidade() {
+        return disponibilidade;
+    }
+
+    public void setDisponibilidade(int disponibilidade) {
+        this.disponibilidade = disponibilidade;
     }
 }

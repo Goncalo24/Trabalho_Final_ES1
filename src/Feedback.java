@@ -1,25 +1,45 @@
 public class Feedback {
-    String Descricao;
-    ClienteEncomenda clienteEncomenda;
+    private String link;
+    private Envio envio;
+    private String avalicaoEncomenda;
+    private String avalicaoTransportadora;
 
-    public Feedback(String descricao, ClienteEncomenda clienteEncomenda) {
-        Descricao = descricao;
-        this.clienteEncomenda = clienteEncomenda;
+    public Feedback(String link, Envio envio, String avalicaoEncomenda, String avalicaoTransportadora) {
+        this.link = link;
+        this.envio = envio;
+        this.avalicaoEncomenda = avalicaoEncomenda;
+        this.avalicaoTransportadora = avalicaoTransportadora;
     }
 
-    public String getDescricao() {
-        return Descricao;
+    public String getLink() {
+        return link;
     }
 
-    public void setDescricao(String descricao) {
-        Descricao = descricao;
+    public void setLink(String link) {
+        this.link = link;
     }
 
-    public ClienteEncomenda getClienteEncomenda() {
-        return clienteEncomenda;
+    public Envio getEnvio() {
+        return envio;
     }
 
-    public void setClienteEncomenda(ClienteEncomenda clienteEncomenda) {
-        this.clienteEncomenda = clienteEncomenda;
+    public void setEnvio(Envio envio) {
+        this.envio = envio;
+    }
+
+    public String getAvalicaoEncomenda() {
+        return avalicaoEncomenda;
+    }
+
+    public void setAvalicaoEncomenda(String avalicaoEncomenda) {
+        this.avalicaoEncomenda = avalicaoEncomenda;
+    }
+
+    public String getAvalicaoTransportadora() {
+        return avalicaoTransportadora;
+    }
+
+    public void setAvalicaoTransportadora(String avalicaoTransportadora) {
+        this.avalicaoTransportadora = avalicaoTransportadora;
     }
 }

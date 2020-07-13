@@ -1,14 +1,22 @@
 import java.time.LocalDate;
 
 public class Notificacao {
-    LocalDate data;
-    ClienteEncomenda clienteEncomenda;
-    Funcionario funcionario;
+    private Envio envio;
+    private LocalDate data;
+    private String descricao;
 
-    public Notificacao(LocalDate data, ClienteEncomenda clienteEncomenda, Funcionario funcionario) {
+    public Notificacao(Envio envio, LocalDate data, String descricao) {
+        this.envio = envio;
         this.data = data;
-        this.clienteEncomenda = clienteEncomenda;
-        this.funcionario = funcionario;
+        this.descricao = descricao;
+    }
+
+    public Envio getEnvio() {
+        return envio;
+    }
+
+    public void setEnvio(Envio envio) {
+        this.envio = envio;
     }
 
     public LocalDate getData() {
@@ -19,19 +27,11 @@ public class Notificacao {
         this.data = data;
     }
 
-    public ClienteEncomenda getClienteEncomenda() {
-        return clienteEncomenda;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setClienteEncomenda(ClienteEncomenda clienteEncomenda) {
-        this.clienteEncomenda = clienteEncomenda;
-    }
-
-    public Funcionario getFuncionario() {
-        return funcionario;
-    }
-
-    public void setFuncionario(Funcionario funcionario) {
-        this.funcionario = funcionario;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }

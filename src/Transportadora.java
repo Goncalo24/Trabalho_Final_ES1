@@ -1,25 +1,35 @@
 public class Transportadora {
-    private String Nome;
-    private String Email;
+    private String nome;
+    private String email;
+    private int contacto;
 
-    public Transportadora(String nome, String email) {
-        Nome = nome;
-        Email = email;
+    public Transportadora(String nome, String email, int contacto) {
+        this.nome = nome;
+        this.email = email;
+        this.contacto = contacto;
     }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String nome) {
-        Nome = nome;
+        this.nome = nome;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
+    }
+
+    public int getContacto() {
+        return contacto;
+    }
+
+    public void setContacto(int contacto) {
+        this.contacto = contacto;
     }
 }
